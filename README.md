@@ -370,7 +370,7 @@ Because the dataset does not include real maintenance cost, labor capacity, or d
 The current assumptions are:
 
 ```text
-maintenance_hours per reactor = 4
+maintenance_hours per reactor = 3
 downtime_hours per reactor = 2
 maintenance_cost per reactor = 1000
 available_technician_hours = 12
