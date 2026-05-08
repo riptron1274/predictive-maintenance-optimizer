@@ -464,10 +464,6 @@ outputs/figures/final_maintenance_selection.png
 
 ![Confusion Matrix](outputs/figures/confusion_matrix_failure_prediction.png)
 
-### Maintenance Benefit Score
-
-![Maintenance Benefit Score](outputs/figures/maintenance_benefit_score_by_reactor.png)
-
 ### Final Maintenance Selection
 
 ![Final Maintenance Selection](outputs/figures/final_maintenance_selection.png)
