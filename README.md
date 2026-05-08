@@ -262,6 +262,17 @@ Each reactor is held out once as the test reactor, while the model is trained on
 
 This validation strategy tests whether the model can generalize to an unseen reactor, which is important for industrial predictive maintenance systems.
 
+## Model Performance
+
+The final Random Forest model was evaluated using a time-based train/test split.
+
+| Metric | Value |
+|---|---:|
+| Accuracy | 0.99 |
+| Precision | 0.99 |
+| Recall | 0.75 |
+| F1-score | 0.85 |
+| ROC-AUC | 0.94 |
 ---
 
 ## Optimization Model
@@ -410,7 +421,21 @@ The resource usage summary is saved in:
 ```text
 outputs/results/optimization_resource_summary.csv
 ```
+## Final Maintenance Recommendation
 
+Under the current maintenance assumptions, the optimization model selected the following reactors for preventive maintenance:
+
+```text
+Selected reactors: A_R2, B_R3, A_R3
+
+## Key Findings
+
+- The project shows how machine learning predictions can be converted into optimization-based maintenance decisions.
+- Reactor-level risk is more useful for maintenance planning than raw time-step predictions.
+- The maintenance benefit score allows predicted failure risk, efficiency loss, and urgency to be considered together.
+- The optimization model produces a resource-feasible maintenance plan instead of only ranking reactors.
+- `B_R3` showed the highest average predicted failure risk.
+- `A_R2` showed high efficiency loss and was prioritized by the optimization model.
 ---
 
 ## Key Outputs
