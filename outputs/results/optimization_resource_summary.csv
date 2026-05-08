@@ -1,0 +1,2 @@
+selected_reactors,number_selected,total_maintenance_hours,total_downtime_hours,total_maintenance_cost,available_technician_hours,allowed_downtime_hours,available_budget,total_maintenance_benefit
+"['B_R3', 'A_R2', 'A_R3']",3,9,6,3000,12,6,4000,2.056493527480121

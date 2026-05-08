@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# System
+.DS_Store
+
+# Large data files
+data/raw/
+data/processed/
+
+# Large row-level prediction outputs
+outputs/results/failure_risk_predictions.csv
+outputs/results/rg_rf_failure_risk_predictions.csv
+outputs/results/final_integrated_maintenance_recommendations.csv
+
+# Optional: ignore duplicate/temporary result files
+outputs/results/1model_vs_2model_comparison.csv
+outputs/results/rg_rf_feature_importance.csv
+outputs/results/rg_rf_model_comparison.csv
