@@ -60,7 +60,8 @@ The dataset includes:
 
 The dataset used in this project is a synthetic chemical process monitoring time-series dataset.
 
-The dataset can be downlowded from https://www.kaggle.com/datasets/rohit8527kmr7518/chemical-process-monitoring-time-series-dataset
+The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/rohit8527kmr7518/chemical-process-monitoring-time-series-dataset).
+
 To run the project, place the dataset in:
 
 data/raw/chemical_process_timeseries.csv
