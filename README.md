@@ -1,5 +1,11 @@
 # AI-Assisted Predictive Maintenance Optimizer for Chemical Reactors
 
+## Recruiter Summary
+
+This project demonstrates my ability to combine Python, machine learning, time-series feature engineering, and binary optimization to solve an industrial maintenance decision problem.
+
+The system predicts reactor failure risk from multivariate sensor data, aggregates predicted risk at the reactor level, and uses a binary optimization model to recommend preventive maintenance actions under technician-hour, downtime, and budget constraints.
+
 ## Project Overview
 
 This project combines machine learning and mathematical optimization to support preventive maintenance decisions in industrial chemical reactor systems.
@@ -64,8 +70,9 @@ The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/rohi
 
 To run the project, place the dataset in:
 
+```text
 data/raw/chemical_process_timeseries.csv
-
+```
 
 ---
 
@@ -275,6 +282,7 @@ The final Random Forest model was evaluated using a time-based train/test split.
 | F1-score | 0.85 |
 | ROC-AUC | 0.94 |
 ---
+The model achieves high precision and ROC-AUC, while recall remains lower than precision. This is important in predictive maintenance because recall reflects the model’s ability to identify risky observations. For maintenance decision-making, threshold tuning can be used to increase recall when missing failures is more costly than false alarms.
 
 ## Optimization Model
 
@@ -428,6 +436,25 @@ Under the current maintenance assumptions, the optimization model selected the f
 
 ```text
 Selected reactors: A_R2, B_R3, A_R3
+
+```markdown
+## Resource Usage Summary
+
+Under the current assumptions:
+
+| Resource | Available | Used | Remaining |
+|---|---:|---:|---:|
+| Technician hours | 12 | 9 | 3 |
+| Downtime hours | 6 | 6 | 0 |
+| Budget | 4000 | 3000 | 1000 |
+```
+The selected maintenance plan is feasible because the total resource usage remains within all constraints:
+
+- Technician hours used: `9 / 12`
+- Downtime used: `6 / 6`
+- Budget used: `3000 / 4000`
+
+The downtime constraint is fully used, which means no additional reactor can be selected without violating the allowed downtime limit.
 
 ## Key Findings
 
