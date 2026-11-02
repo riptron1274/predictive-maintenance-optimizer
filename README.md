@@ -778,6 +778,50 @@ This project demonstrates skills in:
 - Jupyter Notebook
 
 ---
+---
+
+## Environment Setup
+
+Use a compatible Python installation. The environment
+used to generate requirements-lock.txt should be
+documented with its Python version.
+
+### 1. Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+### 2. Activate the environment
+
+Windows PowerShell:
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+macOS / Linux:
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+python -m pip install -r requirements-lock.txt
+```
+
+### 4. Prepare the dataset
+
+Download the synthetic chemical process dataset
+linked in the project README and save it as:
+
+data/raw/chemical_process_timeseries.csv
+
+### 5. Run the application
+
+```bash
+python main.py
+```
 
 ## Portfolio Summary
 

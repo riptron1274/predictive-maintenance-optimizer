@@ -9,7 +9,7 @@ def main() -> None:
 
     file_path = Path(__file__).resolve().parent / "equipment.csv"
     equipment = load_equipment(file_path)
-    budget = 5000
+    budget = 5000 #Budget available
     selected = select_maintenance(equipment, budget)
     print_report(selected, budget)
 
