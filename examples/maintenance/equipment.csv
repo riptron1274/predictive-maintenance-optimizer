@@ -1,0 +1,5 @@
+name,failure_probability,failure_cost,maintenance_cost,maintenance_effectiveness
+Motor A,0.40,12000,2500,0.75
+Pump B,0.20,9000,1200,0.8
+Robot C,0.30,15000,4000,0.60
+Pump D, 0.80,10000,1100,0.50
